@@ -29,7 +29,7 @@
   
   
   <!-- CAM 2-->
-  <arg name="sensor_id2" default="0" />                       <!-- The sensor id of the camera -->
+  <arg name="sensor_id2" default="1" />                       <!-- The sensor id of the camera -->
   <arg name="cam_name2" default="csi_cam_$(arg sensor_id2)" /> <!-- The name of the camera (corrsponding to the camera info) -->
   <arg name="frame_id2" default="/$(arg cam_name2)_link" />    <!-- The TF frame ID. -->
   <arg name="sync_sink2" default="true" />                    <!-- Synchronize the app sink. Setting this to false may resolve problems with sub-par framerates. -->
