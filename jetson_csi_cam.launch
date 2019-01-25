@@ -44,10 +44,10 @@
   <param name="$(arg cam_name2)/target_fps" type="int" value="$(arg fps2)" />
 
   <!-- Start the GSCAM node -->
-  <node pkg="gscam" type="gscam" name="$(arg cam_name1)">
-    <param name="camera_name" value="$(arg cam_name1)" />
-    <param name="frame_id" value="$(arg frame_id1)" />
-    <param name="sync_sink" value="$(arg sync_sink1)" />
+  <node pkg="gscam" type="gscam" name="$(arg cam_name2)">
+    <param name="camera_name" value="$(arg cam_name2)" />
+    <param name="frame_id" value="$(arg frame_id2)" />
+    <param name="sync_sink" value="$(arg sync_sink2)" />
     <param name="gscam_config" value="nvcamerasrc sensor-id=$(arg sensor_id2) ! video/x-raw(memory:NVMM),
     width=(int)$(arg width2), height=(int)$(arg height2), format=(string)I420, framerate=(fraction)$(arg fps2)/1 ! 
     nvvidconv flip-method=2 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR" />
